@@ -1,0 +1,17 @@
+{
+    "contents" : "---\ntitle       : Pick the car for your budget!\nsubtitle    : Cousera - Develop Data Product\nauthor      : Peter Tan\njob         : Car Sales Consultant\nframework   : io2012        # {io2012, html5slides, shower, dzslides, ...}\nhighlighter : highlight.js  # {highlight.js, prettify, highlight}\nhitheme     : Darkula      # \nwidgets     : []            # {mathjax, quiz, bootstrap}\nmode        : selfcontained # {standalone, draft}\nknit        : slidify::knit2slides\n---\n\n# Every Day Problem\n\nAfter riding through the gasline price roller coaster, even though we are at the down side of the price cycle, it is in everyone's fear if one day the price would shoot up again.  In order to prevent a family budget crisis, \"Pick the car for your budget\" is the app that will help you select the car that will not break your bank but gives you the horse power you are looking for.\n\n--- \n\n# How To Use It\n\n\nTo use this app, you will need to define the following requirement first:\n\n1. Total Gasline Budget you have planned for the year.\n2. Total estimated mileage you need to drive for a year.\n3. Average gasline price in miles per gallon format.\n4. Select the cylinder options for the car you wish to drive.\n5. Define the horse power range of the car you wish to drive.  After all, if the result meets your budget, you might want to pick the car that can give you the highest power output.\n6. Pick your flavor: Automatic transmission or Manual transmission.\n\nOnce you have make your selection, the avaialble car choices that matches your need will be display on the body of the page.  You can sort this data set by clicking the arrows on at the column name or search by text for each column.  \n\nAfter you are satisfy with your options, then it is time to make your selection of the car that matches your need.\n\n---\n\n# The Logic Behind the App\n\nThis app is using the mtcars dataset provided by the datasets package.\n\nWe have displayed the sample data below:\n\n```{r}\nlibrary(datasets)\nhead(mtcars)\n```\nGaslineSpendingPerYr = input$totalMileage/mpg*input$avgGasPrice\n\nTo compute the gasline spending per year, we take your input on expected total mileage travel per year, divided by miles per gallon for each vehicle and multiple by estimated average gasline price per gallon.\n\n---\n\n# Feedbacks\n\nThank you for your participation.  I hope this app will help you avoid hitting the family budget crisis.\n\nYou can test it out by accessing the following URL:\n\nhttps://alucarrd.shinyapps.io/CouseraShiny/\n\nThe source code is stored at the following repository:\n\nhttps://github.com/Alucarrd/DataProduct\n\n\n\n\n\n\n\n\n",
+    "created" : 1458930087897.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2816969856",
+    "id" : "58E26A37",
+    "lastKnownWriteTime" : 1458941534,
+    "path" : "~/data/DataScience/DataProductSlidify/index.Rmd",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}

@@ -2,6 +2,6 @@ name: CouseraShiny
 account: alucarrd
 server: shinyapps.io
 appId: 90464
-bundleId: 402949
+bundleId: 402954
 url: https://alucarrd.shinyapps.io/CouseraShiny/
-when: 1458897579.64448
+when: 1458898589.82088
