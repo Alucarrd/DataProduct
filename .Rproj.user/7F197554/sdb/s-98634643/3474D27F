@@ -1,0 +1,17 @@
+{
+    "contents" : "\n# This is the user-interface definition of a Shiny web application.\n# You can find out more about building applications with Shiny here:\n#\n# http://shiny.rstudio.com\n#\n\n#load my libraries\nlibrary(shiny)\nlibrary(markdown)\n\n#define navbar page\nshinyUI(navbarPage(\"Pick the car for your budget\",\n                   #building my first tab for the page\n                   tabPanel(\"DataTable\",\n                            #building sidebar layout with user input action form\n                            sidebarLayout(\n                              sidebarPanel(\n                                helpText(\"What is your budget?\"),\n                                numericInput('totalBudget', 'How much do you plan to spend on gas a year? ($100 ~ $5000)', 5000, min=100, max=5000),\n                                numericInput('totalMileage', 'How much miles do you plan to drive a year? (5000 ~ 30,000)', 20000, min=5000, max=30000),\n                                numericInput('avgGasPrice', 'Avg Gas Price Per Year ($0.50/year ~ $6.00/year)',  3.25, min=.50, max=6),\n                                checkboxGroupInput('cyl', 'Cylinders:', c(\"Four\"=4, \"Six\" = 6, \"Eight\"=8), selected=c(4, 6, 8)),\n                                sliderInput('hp', 'Horse Power', min=50, max=340, value=c(50, 340), step=10),\n                                checkboxGroupInput('am', 'Transmission:', c(\"Automatic\"=0, \"Manual\"=1), selected=c(0, 1) )\n                              ),\n                              \n                              # main body to display the data table\n                              mainPanel(\n                                dataTableOutput(\"DataTable\")\n                              )         \n                            \n                            )\n                  ),\n                  #Second tab for About markdown\n                  tabPanel(\"About\",\n                           #Load the about.md to the body of the About tab page\n                           mainPanel(\n                              includeMarkdown(\"about.md\")\n                           ))\n))\n",
+    "created" : 1458541185498.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1855707427",
+    "id" : "3474D27F",
+    "lastKnownWriteTime" : 1458895236,
+    "path" : "~/data/DataScience/CouseraShiny/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

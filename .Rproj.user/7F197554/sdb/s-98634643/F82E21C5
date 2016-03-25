@@ -1,0 +1,17 @@
+{
+    "contents" : "\n# This is the server logic for a Shiny web application.\n# You can find out more about building applications with Shiny here:\n#\n# http://shiny.rstudio.com\n#\n\n#load libraries\n\nlibrary(shiny)\nlibrary(datasets)\nlibrary(dplyr)\n\n\nshinyServer(function(input, output) {\n  \n  #render data table and send to output tab\n  output$DataTable <- renderDataTable({\n    \n    #load the horse power range selected by user\n    hp_list <- seq(from = input$hp[1], to = input$hp[2], by=1)\n    \n    #build my data set for the output along with the calculated column GaslineSpendingPerYr\n    data <- transmute(mtcars, Car=rownames(mtcars), MPG=mpg\n                      , GaslineSpendingPerYr= input$totalMileage/mpg*input$avgGasPrice\n                      , Cylinders = cyl\n                      ,Horsepower = hp, Transmission = am) \n    \n    #filter the data set down based on the user input\n    data <- filter(data, GaslineSpendingPerYr < input$totalBudget, Cylinders %in% input$cyl, Horsepower %in% hp_list, Transmission %in% input$am)\n    #transform the transmission column data to text\n    data <- mutate(data, Transmission = ifelse(Transmission ==0, \"Automatic\", \"Manual\"))\n    #sort the dataset by GaslineSpendingPerYr\n    data <- arrange(data, GaslineSpendingPerYr)\n    \n    data\n    \n    \n    \n  }, \n  #set my paging option\n  option = list(lengthMenu = c(5, 10, 15), pageLength=15)\n  )\n\n})\n",
+    "created" : 1458541185569.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2632779604",
+    "id" : "F82E21C5",
+    "lastKnownWriteTime" : 1458895121,
+    "path" : "~/data/DataScience/CouseraShiny/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

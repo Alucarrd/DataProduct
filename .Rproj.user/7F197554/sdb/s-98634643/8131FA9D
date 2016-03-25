@@ -1,0 +1,18 @@
+{
+    "contents" : "---\ntitle: \"Documentation\"\noutput: \"html_document\"\n---\n\n",
+    "created" : 1458594807310.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "506595732",
+    "id" : "8131FA9D",
+    "lastKnownWriteTime" : 1458893837,
+    "path" : "~/data/DataScience/CouseraShiny/about.md",
+    "project_path" : "about.md",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "markdown"
+}
