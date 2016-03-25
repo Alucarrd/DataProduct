@@ -1,0 +1,17 @@
+{
+    "contents" : "# Develope Data Product by building a shiny app\n\nThis repository contains the source code for the project for the Coursera Data Product class.\n\nTo play around with this app, please go to the following URL:\n\nhttps://alucarrd.shinyapps.io/CouseraShiny/\n\nYou can also view the presentation at the following URL:\n",
+    "created" : 1458898351914.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "272139130",
+    "id" : "496BC9AE",
+    "lastKnownWriteTime" : 1458898520,
+    "path" : "~/data/DataScience/CouseraShiny/README.md",
+    "project_path" : "README.md",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "type" : "markdown"
+}

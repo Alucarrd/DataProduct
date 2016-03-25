@@ -1,12 +1,12 @@
 {
-    "contents" : "---\ntitle: \"Documentation\"\noutput: \"html_document\"\n---\n\n",
+    "contents" : "---\ntitle: \"Documentation\"\noutput: \"html_document\"\n---\n\nWelcome to the app that will help you find the car that matches your needs.  With this application, you will be able to interact with the user action side panels and find the car that matches your needs (car data provided from mtcars dataset package).\n\nTo use this app, you will need to define the following requirement first:\n\n1. Total Gasline Budget you have planned for the year.\n2. Total estimated mileage you need to drive for a year.\n3. Average gasline price in miles per gallon format.\n4. Select the cylinder options for the car you wish to drive.\n5. Define the horse power range of the car you wish to drive.  After all, if the result meets your budget, you might want to pick the car that can give you the highest power output.\n6. Pick your flavor: Automatic transmission or Manual transmission.\n\nOnce you have make your selection, the avaialble car choices that matches your need will be display on the body of the page.  You can sort this data set by clicking the arrows on at the column name or search by text for each column.  \n\nAfter you are satisfy with your options, then it is time to make your selection of the car that matches your need.\n\nThe source code can be found located at the following GitHub URL:\n\n[https://github.com/Alucarrd/DataProduct](https://github.com/Alucarrd/DataProduct)",
     "created" : 1458594807310.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "506595732",
+    "hash" : "352308735",
     "id" : "8131FA9D",
-    "lastKnownWriteTime" : 1458893837,
+    "lastKnownWriteTime" : 1458898343,
     "path" : "~/data/DataScience/CouseraShiny/about.md",
     "project_path" : "about.md",
     "properties" : {
